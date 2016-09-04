@@ -1,0 +1,34 @@
+{
+  "name": "ew",
+  "version": "1.0.0",
+  "description": "Ew, it's new",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "yoshuawuyts/ew",
+  "keywords": [
+    "new",
+    "project",
+    "generator",
+    "ew",
+    "template",
+    "templates"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cliclopts": "^1.1.1",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "dependency-check": "^2.6.0",
+    "istanbul": "^0.4.5",
+    "standard": "^8.0.0",
+    "tape": "^4.6.0"
+  },
+  "bin": {
+    "ew": "./ew"
+  }
+}
