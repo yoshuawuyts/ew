@@ -19,8 +19,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "cliclopts": "^1.1.1",
-    "minimist": "^1.2.0"
   },
   "devDependencies": {
     "dependency-check": "^2.6.0",
